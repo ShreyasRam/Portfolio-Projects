@@ -136,6 +136,6 @@ sms_classifier2 <-naiveBayes(sms_train , train_labels , laplace = 1)
 sms_test_pred2 <- predict(sms_classifier2 , sms_test)
 
 CrossTable(sms_test_pred2[1:1390] , test_labels , prop.chisq = FALSE , 
-           prop.t = FALSE , dnn = c('Predicted' , 'Actual'))
+           prop.t = FALSE , dnn = c('Predicted' ,'Actual'))
 
 
