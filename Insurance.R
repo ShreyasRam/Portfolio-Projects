@@ -33,7 +33,6 @@ ins_model
 #evaluating model performance
 summary(ins_model)
 
-
 #improving model performance
 
 ##adding non-linear relationships
