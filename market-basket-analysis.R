@@ -45,4 +45,4 @@ inspect(berry_rules)
 grocery_rules_df <- as(grocery_rules , "data.frame")
 View(grocery_rules_df)
 
-write(grocery_rules , file = "groceryRules.csv" , sep = ",")
+write(grocery_rules , File = "groceryRules.csv" , sep = ",")
