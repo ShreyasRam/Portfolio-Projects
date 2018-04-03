@@ -29,12 +29,6 @@ pairs.panels(ins[c("age", "bmi", "children", "charges")])
 ins_model <- lm(charges ~ age + bmi + sex + smoker + region , data = ins)
 ins_model
 
-'''
-The intercept is the predicted value of expenses 
-when the independent variables are equal to
-zero.
-'''
-
 
 #evaluating model performance
 summary(ins_model)
@@ -45,8 +39,8 @@ summary(ins_model)
 ##adding non-linear relationships
 ins$age2 <- ins$age^2
 
-##converting a numeric variable to a binary indicator
-##We can model this relationship by creating a binary obesity indicator variable that is 1 if the BMI is at least 30, and 0 if less
+##converting a numeric variable to a binary indicator.
+##We can model this relationship by creating a binary obesity indicator variable that is 1 if the BMI is at least 30, and 0 if less.
 
 ins$bmi30 <- ifelse(ins$bmi >= 30 ,1 ,0) 
 
