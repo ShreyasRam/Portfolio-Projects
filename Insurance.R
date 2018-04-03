@@ -53,8 +53,8 @@ ins_model2 <- lm(charges~ age + age2 + children + bmi + sex + bmi30*smoker + reg
 summary(ins_model2)
 
 
-##Relative to our first model, the R-squared
-  #value has improved from 0.75 to about 0.87. Similarly, the adjusted R-squared value,
+##Relative to our first model, the R-squaredvalue has improved from 0.75 to about 0.87. 
+  #Similarly, the adjusted R-squared value,
   #which takes into account the fact that the model grew in complexity, also improved
   #from 0.75 to 0.87. Our model is now explaining 87 percent of the variation in medical
   #treatment costs.
